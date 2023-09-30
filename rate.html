@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Your Experience</title>
+  <style>
+    /* Your existing CSS styles */
+
+.rating {
+    display: inline-block;
+    user-select: none;
+    margin-top: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+    margin-right: 5px;
+}
+
+.rating label:before {
+    content: '\2605'; /* Unicode character for a star */
+}
+
+.rating input:checked ~ label {
+    color: #ffcc00; /* Color for filled stars */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <!-- Header content for your Google Pay clone -->
+    </header>
+    <main>
+        <h1>Rate Your Experience</h1>
+        <p>Please rate your experience with Google Pay:</p>
+        
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+        </div>
+        
+        <textarea id="feedback" placeholder="Share your feedback (optional)"></textarea>
+        
+        <button id="submitRating">Submit</button>
+    </main>
+    <footer>
+        <!-- Footer content for your Google Pay clone -->
+    </footer>
+</body>
+</html>

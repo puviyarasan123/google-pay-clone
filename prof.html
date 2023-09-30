@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <style>
+/* CSS for the Profile Module */
+#profile {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#profile h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.user-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#edit-profile-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#edit-profile-button:hover {
+    background-color: #357ae8;
+}
+
+/* CSS for Edit Profile Form (Hidden by default) */
+#edit-profile-form {
+    display: none;
+    margin-top: 20px;
+}
+
+#edit-profile-form label {
+    font-weight: bold;
+}
+
+#edit-profile-form input[type="text"],
+#edit-profile-form input[type="email"],
+#edit-profile-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#save-profile-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#save-profile-button:hover {
+    background-color: #357ae8;
+}
+
+        </style>
+    </head>
+    <body>
+
+    
+<section id="profile">
+    <h2>Profile</h2>
+    <div class="profile-info">
+        <img src="pro.jpg" alt="User's Profile Picture">
+        <div class="user-details">
+            <h3>PUVIYARASAN</h3>
+            <p>Email: vitstudent@gmail.com</p>
+            <p>Phone: +91 7010702422</p>
+        </div>
+    </div>
+    <button id="edit-profile-button">Edit Profile</button>
+</section>
+</body>
+</html>
